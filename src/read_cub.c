@@ -1,3 +1,4 @@
+
 #include "../inc/cub.h"
 
 void	remove_spaces(t_cub *c, char **line)

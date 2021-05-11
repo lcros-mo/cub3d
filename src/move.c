@@ -1,3 +1,4 @@
+
 #include "../inc/cub.h"
 
 void	step_initial_side(t_cub *c)

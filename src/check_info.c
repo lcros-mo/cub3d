@@ -1,3 +1,4 @@
+
 #include "../inc/cub.h"
 
 int	check_resolution(char *num)

@@ -1,3 +1,4 @@
+
 #include "../inc/cub.h"
 
 static int	rgb2int(int r, int g, int b)

@@ -1,3 +1,4 @@
+
 #include "../inc/cub.h"
 
 static char	*path_tex(char *line, t_cub *c, int nchar)

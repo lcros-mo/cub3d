@@ -1,6 +1,3 @@
-//  mlx_init_loop.m
-// By Ol
-
 #import <Cocoa/Cocoa.h>
 #import <OpenGL/gl3.h>
 #import <AppKit/NSOpenGLView.h>
@@ -56,7 +53,6 @@ void *mlx_init()
 
   new_mlx->appid = [NSApplication sharedApplication];
 
-  // super magic trick to detach app from terminal, get menubar & key input events
   for (NSRunningApplication * app in [NSRunningApplication runningApplicationsWithBundleIdentifier:@"com.apple.finder"])
     {
       [app activateWithOptions:NSApplicationActivateIgnoringOtherApps];
@@ -68,7 +64,6 @@ void *mlx_init()
   usleep(100000);
   [[NSRunningApplication currentApplication] activateWithOptions:NSApplicationActivateIgnoringOtherApps];
 
-  // load font
   new_mlx->font = mlx_new_image(new_mlx, (FONT_WIDTH+2)*95, FONT_HEIGHT);
   i = 0;
   while (i < 4*(FONT_WIDTH+2)*95*FONT_HEIGHT)
@@ -106,8 +101,6 @@ void mlx_loop(mlx_ptr_t *mlx_ptr)
 
   observer = CFRunLoopObserverCreate(NULL, kCFRunLoopBeforeTimers, true, 0, do_loop_flush, &ocontext);
   CFRunLoopAddObserver(CFRunLoopGetMain(), observer, kCFRunLoopCommonModes);
-
-  //  [[[MlxLoopHookObj alloc] initWithPtr:mlx_ptr] performSelector:@selector(do_loop_hook) withObject:nil afterDelay:0.0];
 
   [NSApp run];
 }

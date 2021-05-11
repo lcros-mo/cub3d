@@ -1,3 +1,4 @@
+
 #include "../inc/cub.h"
 
 static void	sort_sprite(t_cub *c)

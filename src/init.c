@@ -1,3 +1,4 @@
+
 #include "../inc/cub.h"
 
 static void	init_file_vble(t_cub *info)

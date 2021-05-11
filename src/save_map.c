@@ -1,3 +1,4 @@
+
 #include "../inc/cub.h"
 
 int	is_char_valid(char c)

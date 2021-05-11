@@ -1,3 +1,4 @@
+
 #include "../inc/cub.h"
 
 static void	ray_pos_dir(t_cub *c, int x)

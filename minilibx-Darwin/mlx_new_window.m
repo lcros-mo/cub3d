@@ -1,5 +1,3 @@
-//  mlx_new_window.m
-
 #import <Cocoa/Cocoa.h>
 #import <OpenGL/gl3.h>
 #import <AppKit/NSOpenGLView.h>

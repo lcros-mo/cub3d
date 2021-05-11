@@ -1,3 +1,4 @@
+
 #include "../inc/cub.h"
 
 void	init_sp_vble(t_cub *c)

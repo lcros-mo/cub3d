@@ -16,8 +16,6 @@ void    *mlx_new_image(mlx_ptr_t *mlx_ptr, int width, int height)
 {
   mlx_img_list_t        *newimg;
 
-  //  if (mlx_ptr->win_list == NULL)
-  //    return (NULL);  // need at leat one window created to have openGL context and create texture
   if ((newimg = malloc(sizeof(*newimg))) == NULL)
     return ((void *)0);
   newimg->next = mlx_ptr->img_list;
@@ -131,7 +129,6 @@ int mlx_string_put(mlx_ptr_t *mlx_ptr, mlx_win_list_t *win_ptr, int x, int y, in
 	{
 	  gX = (FONT_WIDTH+2)*(*string-32);
 	  gY = 0;
-	  //      printf("put char %c pos %d %d\n", *string, gX, gY);
 	  [(id)(win_ptr->winid) mlx_gl_draw_font:mlx_ptr->font andCtx:imgctx andX:x andY:y andColor:color glyphX:gX glyphY:gY];
 #ifdef STRINGPUTX11
 	  x += FONT_WIDTH/1.4;

@@ -1,3 +1,4 @@
+
 #include "../inc/cub.h"
 
 int	key_press_handler(int key, t_cub *c)

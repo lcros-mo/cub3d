@@ -1,5 +1,3 @@
-/* GIMP RGBA C-Source image dump (font.c) */
-
 static const struct {
   unsigned int 	 width;
   unsigned int 	 height;

@@ -1,3 +1,4 @@
+
 #include "../inc/cub.h"
 
 static int	write_bmp_header(t_cub *c, int fd, int filesize)
@@ -78,7 +79,7 @@ int	save_bmp(t_cub *c)
 	int	flags;
 
 	c->bmp = 1;
-	flags = O_CREAT | O_WRONLY | O_TRUNC | O_APPEND;
+	flags = O_CREAT | O_WRONLY | O_TRUNC;
 	init_mlx_func(c);
 	draw(c);
 	pad = (4 - (c->win.wid * 3) % 4) % 4;

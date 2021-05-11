@@ -1,8 +1,3 @@
-//
-// str 2 wordtab & co
-// by ol
-
-
 #include <stdlib.h>
 #include <string.h>
 

@@ -1,11 +1,3 @@
-//
-// mlx_int.h for minilibx
-//
-// ol@staff.42.fr
-//
-// include opengl needed before mlx_int.h
-//
-
 #import <Cocoa/Cocoa.h>
 #import "mlx_int.h"
 
